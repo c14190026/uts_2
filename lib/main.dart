@@ -161,7 +161,7 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.save),
+                  const Icon(Icons.bookmark),
                   Column(
                     children: const [
                       Text("Human Respiratory System",
@@ -177,7 +177,7 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.save_alt),
+                  const Icon(Icons.book),
                   Column(
                     children: const [
                       Text("Integration & Differentation",
@@ -190,6 +190,22 @@ class MyApp extends StatelessWidget {
               ),
             ],
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.menu_book),
+              label: 'Explore',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.chat),
+              label: 'Chat',
+            ),
+          ],
         ),
       ),
     );
