@@ -68,65 +68,92 @@ class MyApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Column(
-                    children: [
-                      const Icon(Icons.calendar_today),
-                      const Text("Science",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 14.0)),
-                      const Text("Chapter 4"),
-                      Row(
-                        children: const [
-                          Icon(Icons.lock_clock),
-                          Text("27 mins")
-                        ],
-                      )
-                    ],
+                  Container(
+                    padding: EdgeInsets.all(4),
+                    color: Colors.lightGreen,
+                    child: Column(
+                      children: [
+                        const Icon(Icons.calendar_today),
+                        SizedBox(height: 10),
+                        const Text("Science",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 14.0)),
+                        const Text("Chapter 4"),
+                        SizedBox(height: 10),
+                        Row(
+                          children: const [
+                            Icon(Icons.lock_clock),
+                            Text("27 mins")
+                          ],
+                        )
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      const Icon(Icons.star),
-                      const Text("Design",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 14.0)),
-                      const Text("Chapter 5"),
-                      Row(
-                        children: const [
-                          Icon(Icons.lock_clock),
-                          Text("30 mins")
-                        ],
-                      )
-                    ],
+                  SizedBox(width: 10),
+                  Container(
+                    padding: EdgeInsets.all(4),
+                    color: Colors.lightGreen,
+                    child: Column(
+                      children: [
+                        const Icon(Icons.star),
+                        SizedBox(height: 10),
+                        const Text("Design",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 14.0)),
+                        const Text("Chapter 5"),
+                        SizedBox(height: 10),
+                        Row(
+                          children: const [
+                            Icon(Icons.lock_clock),
+                            Text("30 mins")
+                          ],
+                        )
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      const Icon(Icons.car_rental),
-                      const Text("Biology",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 14.0)),
-                      const Text("Chapter 1"),
-                      Row(
-                        children: const [
-                          Icon(Icons.lock_clock),
-                          Text("25 mins")
-                        ],
-                      )
-                    ],
+                  SizedBox(width: 10),
+                  Container(
+                    padding: EdgeInsets.all(4),
+                    color: Colors.lightGreen,
+                    child: Column(
+                      children: [
+                        const Icon(Icons.car_rental),
+                        SizedBox(height: 10),
+                        const Text("Biology",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 14.0)),
+                        const Text("Chapter 1"),
+                        SizedBox(height: 10),
+                        Row(
+                          children: const [
+                            Icon(Icons.lock_clock),
+                            Text("25 mins")
+                          ],
+                        )
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      const Icon(Icons.coffee),
-                      const Text("Cooking",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 14.0)),
-                      const Text("Chapter 3"),
-                      Row(
-                        children: const [
-                          Icon(Icons.lock_clock),
-                          Text("18 mins")
-                        ],
-                      )
-                    ],
+                  SizedBox(width: 10),
+                  Container(
+                    padding: EdgeInsets.all(4),
+                    color: Colors.lightGreen,
+                    child: Column(
+                      children: [
+                        const Icon(Icons.coffee),
+                        SizedBox(height: 10),
+                        const Text("Cooking",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 14.0)),
+                        const Text("Chapter 3"),
+                        SizedBox(height: 10),
+                        Row(
+                          children: const [
+                            Icon(Icons.lock_clock),
+                            Text("18 mins")
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -142,50 +169,92 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.add_task),
-                  Column(
-                    children: const [
-                      Text("Basics of Designing",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18.0)),
-                      Text("1 hour, 25 mins")
-                    ],
-                  )
+                  Container(
+                    width: 380,
+                    padding: EdgeInsets.all(7),
+                    color: Colors.purpleAccent,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Icon(Icons.add_task),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text("Basics of Designing",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18.0)),
+                            Text("1 hour, 25 mins")
+                          ],
+                        ),
+                        const Icon(Icons.play_arrow)
+                      ],
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.bookmark),
-                  Column(
-                    children: const [
-                      Text("Human Respiratory System",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18.0)),
-                      Text("4 hours, 10 mins")
-                    ],
-                  )
+                  Container(
+                    width: 380,
+                    padding: EdgeInsets.all(7),
+                    color: Colors.purpleAccent,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Icon(Icons.bookmark),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text("Human Respiratory System",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18.0)),
+                            Text("4 hours, 10 mins")
+                          ],
+                        ),
+                        const Icon(Icons.play_arrow)
+                      ],
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.book),
-                  Column(
-                    children: const [
-                      Text("Integration & Differentation",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 18.0)),
-                      Text("2 hours, 37 mins")
-                    ],
-                  )
+                  Container(
+                    width: 380,
+                    padding: EdgeInsets.all(7),
+                    color: Colors.purpleAccent,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Icon(Icons.book),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text("Integration & Differentation",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18.0)),
+                            Text("2 hours, 37 mins")
+                          ],
+                        ),
+                        const Icon(Icons.play_arrow)
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ],
